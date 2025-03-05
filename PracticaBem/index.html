@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina BEM</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--https://wireframe.cc/KRE2Ge -->
+</head>
+
+<!-- requisitos
+    - BEM
+    - DISPLAY GRID
+    - VARIABLES-->
+
+<body>
+    <!-- header con grid -->
+    <header class="header">
+        <div class="header__logo">
+            <a class="header__logo__img" href="">
+                <img src="img/logo.img" alt="">
+            </a>
+        </div>
+
+        <div class="header__cesta">
+            <a class="" href=""><i class="bi bi-bag-check-fill"></i></a></i>
+        </div>
+
+        <nav class="nav">
+            <a class="nav__link nav__link--activo" href="">Inicio</a>
+            <a class="nav__link" href="">Productos</a>
+            <a class="nav__link" href="">Nosotros</a>
+            <a class="nav__link" href="">Noticias</a>
+        </nav>
+    </header>
+
+    <!-- seccion 1 con  posicionamiento -->
+    <section class="banner">
+        <img class="banner__img" src="img/header.jpg" alt="">
+        <div class="gradiente"></div>
+        <div class="banner__descripcion">
+            <h2 class="banner__titular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur incidunt, at
+                ipsam debitis cupiditate
+                repellendus accusantium temporibus consequuntur veniam exercitationem dolores perferendis aut quidem
+                deleniti omnis laudantium numquam dolor fugit?</h2>
+            <a class="banner__btn" href="">Ver más</a>
+        </div>
+    </section>
+
+    <!-- zona de producto o servicios -->
+    <section class="productos">
+        <!-- primer producto -->
+        <div class="contenedor_producto">
+            <h2 class="titulo_producto">Raqueta ISUNSA</h2>
+            <div class="imagen_producto">
+                <img src="img/padel1.webp" alt="">
+            </div>
+            <div class="texto_producto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minima, voluptatem ratione
+                    labore ipsa odit saepe libero eveniet corrupti repellendus ipsam voluptatibus! Temporibus error
+                    voluptas culpa cumque odio iure eum!</p>
+            </div>
+            <div class="boton__producto">
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+        <!-- segundo producto -->
+        <div class="contenedor_producto">
+            <h2 class="titulo_producto">Raqueta ISUNSA</h2>
+            <div class="imagen_producto">
+                <img src="img/padel1.webp" alt="">
+            </div>
+            <div class="texto_producto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minima, voluptatem ratione
+                    labore ipsa odit saepe libero eveniet corrupti repellendus ipsam voluptatibus! Temporibus error
+                    voluptas culpa cumque odio iure eum!</p>
+            </div>
+            <div class="boton__producto">
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+
+        <!-- tercer producto -->
+        <div class="contenedor_producto">
+            <h2 class="titulo_producto">Raqueta ISUNSA</h2>
+            <div class="imagen_producto">
+                <img src="img/padel1.webp" alt="">
+            </div>
+            <div class="texto_producto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minima, voluptatem ratione
+                    labore ipsa odit saepe libero eveniet corrupti repellendus ipsam voluptatibus! Temporibus error
+                    voluptas culpa cumque odio iure eum!</p>
+            </div>
+            <div class="boton__producto">
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+        <!-- cuarto producto -->
+        <div class="contenedor_producto">
+            <h2 class="titulo_producto">Raqueta ISUNSA</h2>
+            <div class="imagen_producto">
+                <img src="img/padel1.webp" alt="">
+            </div>
+            <div class="texto_producto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minima, voluptatem ratione
+                    labore ipsa odit saepe libero eveniet corrupti repellendus ipsam voluptatibus! Temporibus error
+                    voluptas culpa cumque odio iure eum!</p>
+            </div>
+            <div class="boton__producto">
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION 3 QUIENES SOMOS -- EMPRESA -->
+    <section class="quienes_somos">
+        <!-- imagen grande -->
+        <div class="imagen_grande">
+            <img src="img/edificio1.avif" alt="">
+        </div>
+        <!-- imagenes secundaria -->
+        <div class="imagenes_secundarias">
+
+            <div class="imagen_principal">
+                <img src="img/analisisPadel.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque, ducimus ex enim minus corporis
+                    nemo officiis dignissimos quaerat alias voluptates, dolorem repellendus perferendis iste modi
+                    provident! Beatae, ipsam numquam?</p>
+            </div>
+
+            <div class="imagen_principal">
+                <img src="img/analisisPadel.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque, ducimus ex enim minus corporis
+                    nemo officiis dignissimos quaerat alias voluptates, dolorem repellendus perferendis iste modi
+                    provident! Beatae, ipsam numquam?</p>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION 4 ZONA DE NOTICIAS O BLOG -->
+    <section class="noticias">
+        <!-- noticia 1 -->
+        <div class="noticias__noticia">
+            <h2 class="noticias_titulo">Últimas noticias</h2>
+            <img src="img/noticias.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil perferendis nesciunt rem enim
+                voluptas ut temporibus, accusamus maxime exercitationem itaque, odio nisi in, cum ipsum quidem! Quas,
+                dolorem officiis.</p>
+
+        </div>
+
+        <!-- noticia 1 -->
+        <div class="noticias__noticia">
+            <h2 class="noticias_titulo">Últimas noticias</h2>
+            <img src="img/noticias.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil perferendis nesciunt rem enim
+                voluptas ut temporibus, accusamus maxime exercitationem itaque, odio nisi in, cum ipsum quidem! Quas,
+                dolorem officiis.</p>
+
+
+        </div>
+
+        <!-- noticia 1 -->
+        <div class="noticias__noticia">
+            <h2 class="noticias_titulo">Últimas noticias</h2>
+            <img src="img/noticias.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil perferendis nesciunt rem enim
+                voluptas ut temporibus, accusamus maxime exercitationem itaque, odio nisi in, cum ipsum quidem! Quas,
+                dolorem officiis.</p>
+
+
+        </div>
+    </section>
+
+    <!-- FOOOTER -->
+    <footer class="footer">
+        <div class="iconos">
+            <!-- iconos -->
+            <div class="footer_iconos">
+                <img src="img/instagram(1).png" alt="">
+            </div>
+            <div class="footer_iconos">
+                <img src="img/facebook(1).png" alt="">
+
+            </div>
+            <div class="footer_iconos">
+                <img src="img/whatsapp(1).png" alt="">
+            </div>
+
+        </div>
+
+        <!-- segunda fila footer -->
+        <div class="segunda_fila">
+            <div class="texto1">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque suscipit aut exercitationem ipsam
+                    deserunt iure error cumque sit temporibus deleniti ut facere atque minima a autem, labore facilis
+                    obcaecati? Perspiciatis!</p>
+            </div>
+            <div class="imagen1">
+                <img src="img/logo.img" alt="">
+            </div>
+            <div class="texto2">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis modi veritatis aspernatur
+                    repudiandae quas veniam consectetur sit tempora sunt aliquid saepe, minus expedita molestias est
+                    dolor nulla beatae assumenda atque!</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

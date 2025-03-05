@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --principal-azul: #01168c;
+    --principal-blanco: white;
+    --principal-negro: rgb(49, 48, 48);
+    --secundario-naranja: #ffae00f7;
+    --terciario--verde: #00BB00;
+    --letra-cuerpo: "Manrope", sans-serif;
+    --letra-titular: "", sans-serif;
+    --relleno-enlaces: 10px;
+    --producto--oferta: ; /* usar modificador */
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    /*font-family: ;*/
+}
+
+
+img {
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+header {
+    display: grid;
+    grid-template-areas:
+        "logo cesta"
+        "nav nav"
+    ;
+    align-items: center;
+}
+
+
+.header__logo {
+    grid-area: logo;
+}
+
+.header__cesta {
+    grid-area: cesta;
+    margin: auto;
+}
+
+
+.nav {
+    /*grid-column: 1/3;
+    grid-row: 2/3;*/
+    grid-area: nav;
+    text-align: center;
+}
+
+.nav__link {
+    background-color: var(--principal-negro);
+    color: var(--principal-blanco);
+    padding: var(--relleno-enlaces);
+    display: block;
+}
+
+.nav__link:hover,
+.nav__link--activo {
+    background-color: var(--secundario-naranja);
+    color: var(--principal-blanco);
+}
+
+
+.cesta {
+    font-size: 400px;
+    color: var(--principal-negro);
+}
+
+
+/* seccion imagen y texto */
+.banner {
+    margin-top: 5%;
+    position: relative;
+}
+
+.banner__descripcion {
+    display: none;
+    position: absolute;
+    width: 90%;
+    top: 10%;
+    left: 10%;
+    color: white;
+}
+
+.banner__btn {
+    position: absolute;
+    left: 40%;
+    color: white;
+    list-style: none;
+}
+
+.gradiente{
+    position: absolute;
+    background: linear-gradient(0.25turn, #32abde, #ebf8e1, #f69d3c);
+    width: 100%;
+    height: 100%;
+    top: -1%;
+    opacity: 45%;
+}
+
+
+/* SECCION DE PRODUCTOS  */
+.productos {
+    display: block;
+    justify-content: center;
+}
+
+.titulo_producto,
+.boton__producto{
+    text-align: center;
+}
+
+.boton__producto{
+    padding: 4px;
+    background-color: var(--secundario-naranja);
+}
+
+/* seccion 3 quienes somos y empresa -- ajustar luego block y mostrar luego*/
+.quienes_somos{
+    display: block;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* seccion 4 noticias -- añadir luego al minwidth */
+.noticias{
+    display: block;
+    gap: 30px;
+    margin-top: 3%;
+}
+
+.noticias_titulo{
+    text-align: center;
+}
+
+/* footer */
+.footer{
+    background-color: var(--secundario-naranja);
+}
+
+.iconos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 5%;
+    gap: 10px;
+    padding: 2%;
+}
+
+.segunda_fila{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 2%;
+}
+/* media querys*/
+@media (min-width: 576px) {
+    .banner__descripcion {
+        display: block;
+        position: absolute;
+        width: 90%;
+        top: 10%;
+        left: 10%;
+        color: white;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .quienes_somos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen_principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 10%;
+    }
+
+    .noticias{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 3%;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    header {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "logo nav cesta"
+        ;
+    }
+
+    .nav__link {
+        display: inline-block;
+    }
+}
+
+
+@media (min-width: 992px) {
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    header {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "logo nav cesta"
+        ;
+        gap: 10px;
+
+    }
+
+    .nav__link {
+        display: inline-block;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    /* revisar */
+    body {
+        width: 80%;
+    }
+
+}
